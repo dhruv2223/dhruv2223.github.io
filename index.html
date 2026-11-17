@@ -1,108 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv Chotalia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhruv Chotalia | Software Engineer</title>
+  <meta name="description" content="Dhruv Chotalia, Software Engineer building agentic AI systems, RAG and evals, backends and cloud infrastructure.">
+  <meta property="og:title" content="Dhruv Chotalia | Software Engineer">
+  <meta property="og:description" content="Agentic AI systems, RAG and evals, backends and cloud infrastructure.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
-    <!-- instructions in JavaScript block -->
-     <nav>
-    <ul class="no-bullets">
-        <li class="logo"><h1><a href="index.html"><i class="fa-solid fa-code"></i><span>Dhruv Chotalia</span></a></h1></li>
-        <li class="right-nav">
-            <ul class="right-nav-list">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                <li><a href="https://github.com/dhruv2223" target="_blank"><i class="fa-brands fa-github"aria-hidden="true"></i><span class="sr-only">Github</span></a></li>
-                <li><a href="https://linkedin.com/in/dhruvchotalia22" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span class="sr-only"> LinkedIn</span></a></li>
-                <li><a href="https://drive.google.com/file/d/1354hmWscmOsrISO4VMWJI070Jki45awJ/view?usp=drive_link" class="button">Resume</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>  
-<section id="intro">
-    <p class="name">Hi, my name is <span>Dhruv Chotalia.</span></p>
-    <h2>I am learning the web.</h2>
-</section>
-<div class="gradient"></div>
-<!-- instructions in JavaScript block -->
-<div class="section-blue">
-    <section id="projects">
-      <h2>Projects I'm proud of</h2>
-      <article >
-        <div class="text">
-          <h4>Latest Project</h4>
-          <h3>Note Taking CLI App</h3>
-          <p class="blackbox">NoteCLI is a simple and efficient command-line interface (CLI) application for managing your notes. Designed for developers and power users who prefer the speed and flexibility of the terminal, NoteCLI allows you to quickly create, view, and organize your notes without leaving your command-line environment. Whether you're managing a to-do list, tracking project ideas, or taking quick notes during meetings, NoteCLI streamlines your workflow..</p>
-          <h4>Technologies used include:</h4>
-          <ul>
-            <li>NodeJS</li>
-          </ul>
-        </div>
-        <img style="height:400px" src="./logo-color.png" alt="Screenshot of the Wall of Wonder." />
-      </article>
-      <article class="reverse">
-        <div class="text">
-          <h3>Paytm wallet</h3>
-          <p class="blackbox">
-A full-stack application that replicates the functionalities of the Paytm wallet, built using NodeJS, MongoDB, Express, and React
-          </p>
-          <h4>Technologies used include:</h4>
-          <ul>
-            <li>NodeJS</li>
-            <li>ExpressJS</li>
-            <li>MongoDB</li>
-            <li></li>
-          </ul>
-        </div>
-        <img src="./Paytm_Logo.png" alt="Screenshot of the Frontend Masters Bootcamp." />
-      </article>
-      <article>
-        <div class="text">
-          <h4>Photography Project</h4>
-          <h3>Wall of Wonder Collection</h3>
-          <p class="blackbox">
-CoffeeShop is a web application to buy and manage all your coffee needs. Features include browsing coffee products, adding items to a cart, and secure, convenient, and fast checkout.
-          </p>
-          <h4>Technologies used include:</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS Grid</li>
-          </ul>
-        </div>
-          <img src="./coffeemaster.png" alt="coffee master" />
-      </article>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">Dhruv Chotalia</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow">Software Engineer · Mumbai, India</p>
+      <h1 id="hero-title">I build agentic AI systems, and the backends and evals that make them hold up in production.</h1>
+      <p class="lead">
+        Final-year B.Tech student in AI &amp; Machine Learning at DJ Sanghvi College of Engineering.
+        I work on multi-step tool-calling agents, RAG, eval-driven development, and the Python, Go and
+        TypeScript services and cloud infrastructure behind them.
+      </p>
+      <p class="actions">
+        <a class="btn btn-primary" href="#projects">See my work</a>
+        <a class="btn" href="resume.pdf" download>Download resume</a>
+        <a class="btn" href="https://github.com/dhruv2223" target="_blank" rel="noopener">GitHub</a>
+      </p>
     </section>
-  </div>
-<div class="gradient"></div>
-<section id="contact">
-    <h3>Contact Me</h3>
-    <p>
-        <span>I'm always excited to explore new opportunities in computer science and web development.</span><br>
-        <span>Currently focused on mastering JavaScript and learning React </span><br>
-        <span>Open to discussions about programming, web design, and innovative tech projects.</span>
-    </p>
-    <p><a href="mailto:dhchotalia@gmail.com" class="button">Email</a></p>
-</section>
-<div class="gradient"></div>
-<footer class="foot">
-    <div>
-    <h3>Dhruv Chotalia &middot; Developer</h3>
-    </div>
-    <ul class="icon">
-        <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i><span class="sr-only"   >LinkedIn</span></a></li>
-        <li><a href="https://www.github.com"><i class="fa-brands fa-github"aria-hidden="true"></i><span class="sr-only">Github</span></a></li>
-        <li><a href="https://www.gmail.com"><i class="fa-solid fa-envelope"><span class="sr-only">Email</span></i></a></li>     
-    </ul>
-    <div class="footer-text">
-    <p>&copy; 2021 Dhruv Chotalia. All rights reserved.</p>
-    </div>
-</footer>
+
+    <section class="container section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="ai" aria-pressed="false">AI &amp; Agents</button>
+        <button type="button" class="chip" data-filter="backend" aria-pressed="false">Backend</button>
+        <button type="button" class="chip" data-filter="cloud" aria-pressed="false">Cloud</button>
+      </div>
+
+      <ul class="projects">
+        <li>
+          <article class="card" data-tags="ai">
+            <header>
+              <h3>DiagramForge-ai</h3>
+              <p class="tagline">Agentic assistant that turns plain English into editable diagrams on a live Excalidraw canvas.</p>
+            </header>
+            <ul class="points">
+              <li>Multi-step Claude tool-calling agent running as a stateful Cloudflare Durable Object, streaming to a React 19 client over WebSockets.</li>
+              <li>Client-side canvas tools and server-side research tools (Upstash Vector RAG, Tavily web search), with human-in-the-loop approval.</li>
+              <li>Braintrust eval harness: 50+ golden cases, a headless canvas simulator and 8 custom scorers, every run tagged by git commit.</li>
+            </ul>
+            <ul class="tags" aria-label="Tech used">
+              <li>TypeScript</li><li>Claude</li><li>Vercel AI SDK</li><li>Durable Objects</li><li>Braintrust</li>
+            </ul>
+            <footer><a href="https://github.com/dhruv2223/diagramforge-ai" target="_blank" rel="noopener">View on GitHub →</a></footer>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" data-tags="ai">
+            <header>
+              <h3>Browser Agent</h3>
+              <p class="tagline">General-purpose AI agent in the terminal that runs approved tools across multi-turn conversations.</p>
+            </header>
+            <ul class="points">
+              <li>Hand-written tool-calling loop (no agent framework) streaming token by token into a React Ink terminal UI.</li>
+              <li>7 Zod-validated tools for files, shell, code execution and web search, each gated by user approval.</li>
+              <li>Automatic summarization-based context compaction at 80% of the context window; Laminar tracing and precision/recall evals.</li>
+            </ul>
+            <ul class="tags" aria-label="Tech used">
+              <li>TypeScript</li><li>Node.js</li><li>OpenAI</li><li>Zod</li><li>Laminar</li>
+            </ul>
+            <footer><a href="https://github.com/dhruv2223/browser-agent" target="_blank" rel="noopener">View on GitHub →</a></footer>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" data-tags="backend">
+            <header>
+              <h3>TaskBoard API</h3>
+              <p class="tagline">Trello-style task-management backend with boards, assignments and role-based permissions.</p>
+            </header>
+            <ul class="points">
+              <li>REST API with filtering, full-text search, multi-field sorting and pagination, on a framework-independent service layer.</li>
+              <li>JWT access/refresh tokens with bcrypt; refuses to start in production with a placeholder secret.</li>
+              <li>Tests run against real PostgreSQL; CI fails when models and Alembic migrations drift apart.</li>
+            </ul>
+            <ul class="tags" aria-label="Tech used">
+              <li>Python</li><li>FastAPI</li><li>SQLAlchemy 2.0</li><li>PostgreSQL</li><li>GitHub Actions</li>
+            </ul>
+            <footer><a href="https://github.com/dhruv2223/taskboard-api" target="_blank" rel="noopener">View on GitHub →</a></footer>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" data-tags="backend">
+            <header>
+              <h3>Reeling-it</h3>
+              <p class="tagline">Full-stack movie catalog: a Go backend and a framework-free JavaScript single-page app.</p>
+            </header>
+            <ul class="points">
+              <li>Search, genre filters and sorting over ~5,000 movies, plus Favorites and Watchlist collections.</li>
+              <li>Layered Go backend where handlers depend on repository interfaces, so storage can be swapped.</li>
+              <li>Password login with JWT sessions plus passwordless sign-in with Passkeys (WebAuthn).</li>
+            </ul>
+            <ul class="tags" aria-label="Tech used">
+              <li>Go</li><li>PostgreSQL</li><li>Web Components</li><li>WebAuthn</li>
+            </ul>
+            <footer><a href="https://github.com/dhruv2223/reeling-it" target="_blank" rel="noopener">View on GitHub →</a></footer>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" data-tags="cloud backend">
+            <header>
+              <h3>Goals</h3>
+              <p class="tagline">Cloud-native Go microservice deployed on AWS with infrastructure as code.</p>
+            </header>
+            <ul class="points">
+              <li>Docker multi-stage builds, with Terraform provisioning App Runner, ECR and SSM Parameter Store.</li>
+              <li>Secrets in SSM, local development with Docker Compose + PostgreSQL, migrations with goose.</li>
+              <li>Deployment since taken down to avoid recurring AWS costs.</li>
+            </ul>
+            <ul class="tags" aria-label="Tech used">
+              <li>Go</li><li>AWS</li><li>Terraform</li><li>Docker</li>
+            </ul>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <article>
+            <header class="row">
+              <h3>Software Engineering Intern · Kaksha.ai</h3>
+              <p class="meta"><time datetime="2025-07">Jul 2025</time> – <time datetime="2025-09">Sep 2025</time></p>
+            </header>
+            <ul class="points">
+              <li>Migrated data workflows from static Prefect scripts to modular Python/PySpark pipelines for analytics.</li>
+              <li>Scheduled daily refreshes with Prefect and Docker, with fault-tolerant retries for reliable downstream reports.</li>
+              <li>Researched and documented ClickHouse query optimization and integration for the analytics team.</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header class="row">
+              <h3>B.Tech, AI &amp; Machine Learning · DJ Sanghvi College of Engineering</h3>
+              <p class="meta"><time datetime="2023">2023</time> – <time datetime="2027">2027</time></p>
+            </header>
+            <p>CGPA 8.19 (through Semester 6)</p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="container section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills">
+        <div><dt>Agentic AI</dt><dd>Tool-calling agents, framework-free agent loops, human-in-the-loop, context engineering &amp; compaction</dd></div>
+        <div><dt>LLMs &amp; SDKs</dt><dd>Anthropic Claude, OpenAI, Vercel AI SDK, Cloudflare Agents SDK, Zod</dd></div>
+        <div><dt>Evals &amp; Observability</dt><dd>Golden datasets, custom scorers, LLM-as-a-judge, Braintrust, Laminar (OpenTelemetry)</dd></div>
+        <div><dt>Retrieval</dt><dd>RAG, embeddings, semantic search, Upstash Vector, Tavily</dd></div>
+        <div><dt>Languages</dt><dd>Python, TypeScript, JavaScript, Go, SQL, Java</dd></div>
+        <div><dt>Backend</dt><dd>FastAPI, Node.js, Go net/http, REST, WebSockets, JWT, WebAuthn</dd></div>
+        <div><dt>Data</dt><dd>PostgreSQL, MongoDB, ClickHouse, PySpark, Alembic, goose</dd></div>
+        <div><dt>Cloud &amp; DevOps</dt><dd>AWS (App Runner, ECR, SSM), Cloudflare Workers, Terraform, Docker, GitHub Actions</dd></div>
+      </dl>
+    </section>
+
+    <section class="container section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Open to software engineering roles in agentic AI, backend and infrastructure. The fastest way to reach me is email.</p>
+      <address>
+        <ul class="contact-links">
+          <li><a href="mailto:dhchotalia@gmail.com">dhchotalia@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/dhruvchotalia22" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/dhruv2223" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="container">© <span id="year">2026</span> Dhruv Chotalia</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>

@@ -1,2 +1,5 @@
-# portfolio
-Hi, I’m Dhruv Chotalia, a passionate computer science student currently in my second year at DJCSE, set to graduate in 2027. I have a strong foundation in programming and a keen interest in web development and artificial intelligence.
+# dhruv2223.github.io
+
+Personal portfolio of Dhruv Chotalia. Plain HTML, CSS and JS, served by GitHub Pages.
+
+Live: https://dhruv2223.github.io
